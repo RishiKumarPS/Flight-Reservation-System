@@ -5,14 +5,12 @@ public class regularTicket extends ticket{
     private boolean food;
     private boolean water;
     private boolean snacks;
-    private ticket ticket;
 
-    public regularTicket(int pnr, int seatNo, boolean ticketType, String departure, String destination, int price, boolean food, boolean water, boolean snacks, com.flightReservationSystem.ticket ticket) {
-        super(pnr, seatNo, ticketType, departure, destination, price);
+    public regularTicket(int seatNo, boolean ticketType, flight flightObj, passenger passengerObj, int price, boolean food, boolean water, boolean snacks, com.flightReservationSystem.ticket ticket) {
+        super(seatNo, ticketType, flightObj, passengerObj, price);
         this.food = food;
         this.water = water;
         this.snacks = snacks;
-        this.ticket = ticket;
     }
 
     public boolean isFood() {
@@ -39,12 +37,5 @@ public class regularTicket extends ticket{
         this.snacks = snacks;
     }
 
-    public com.flightReservationSystem.ticket getTicket() {
-        return ticket;
-    }
-
-    public void setTicket(com.flightReservationSystem.ticket ticket) {
-        this.ticket = ticket;
-    }
 }
 

@@ -2,6 +2,7 @@ package com.flightReservationSystem;
 import java.util.*;
 
 public class ticket {
+    private int pnrCounter = 1000;
     private int pnr;
     private flight flight;
     private passenger passenger;
@@ -50,8 +51,8 @@ public class ticket {
         this.flight = flight;
     }
 
-    public ticket(int pnr, com.flightReservationSystem.flight flight, com.flightReservationSystem.passenger passenger, int seatNo, boolean ticketType, int price) {
-        this.pnr = pnr;
+    public ticket(int seatNo, boolean ticketType, flight flight, passenger passenger, int price) {
+        this.pnr = pnrCounter++;
         this.flight = flight;
         this.passenger = passenger;
         this.seatNo = seatNo;

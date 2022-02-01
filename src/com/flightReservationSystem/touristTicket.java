@@ -1,10 +1,11 @@
 package com.flightReservationSystem;
 
-public class touristTicket {
+public class touristTicket extends ticket {
     private String hotelAddress;
     private String[] touristLocations = new String[5];
 
-    public touristTicket(String hotelAddress, String[] touristLocations) {
+    public touristTicket(int seatNo, boolean ticketType, flight flightObj, passenger passengerObj, int price, String hotelAddress, String[] touristLocations) {
+        super(seatNo, ticketType, flightObj, passengerObj, price);
         this.hotelAddress = hotelAddress;
         this.touristLocations = touristLocations;
     }
