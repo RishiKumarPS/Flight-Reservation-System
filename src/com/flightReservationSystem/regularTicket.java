@@ -6,11 +6,16 @@ public class regularTicket extends ticket{
     private boolean water;
     private boolean snacks;
 
-    public regularTicket(int seatNo, boolean ticketType, flight flightObj, passenger passengerObj, int price, boolean food, boolean water, boolean snacks, com.flightReservationSystem.ticket ticket) {
-        super(seatNo, ticketType, flightObj, passengerObj, price);
+    public regularTicket(boolean ticketType, flight flightObj, passenger passengerObj, int price, boolean food, boolean water, boolean snacks) {
+        super(ticketType, flightObj, passengerObj, price);
         this.food = food;
         this.water = water;
         this.snacks = snacks;
+    }
+
+    @Override
+    public int getPnr() {
+        return super.getPnr();
     }
 
     public boolean isFood() {

@@ -41,10 +41,13 @@ public class flight {
         this.seatsBooked = seatsBooked;
     }
 
-    public flight(int flightNumber, int capacity, String airline, int seatsBooked) {
+    public flight(int flightNumber, int capacity, String airline, int seatsBooked, int journeyTime, String departure, String destination) {
         this.flightNumber = flightNumber;
         this.capacity = capacity;
         this.airline = airline;
         this.seatsBooked = seatsBooked;
+        this.journeyTime = journeyTime;
+        this.departure = departure;
+        this.destination = destination;
     }
 }
