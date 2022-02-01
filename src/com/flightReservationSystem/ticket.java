@@ -1,7 +1,7 @@
 package com.flightReservationSystem;
 import java.util.*;
 
-public class ticket {
+public abstract class ticket {
     private int pnrCounter = 1000;
     private int pnr;
     private flight flight;
