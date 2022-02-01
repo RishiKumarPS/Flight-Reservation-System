@@ -1,6 +1,6 @@
 package com.flightReservationSystem;
 
-class touristTicket {
+public class touristTicket {
     private String hotelAddress;
     private String[] touristLocations = new String[5];
 
