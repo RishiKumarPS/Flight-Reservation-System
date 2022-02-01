@@ -32,6 +32,30 @@ public class flight {
         return airline;
     }
 
+    public int getJourneyTime() {
+        return journeyTime;
+    }
+
+    public void setJourneyTime(int journeyTime) {
+        this.journeyTime = journeyTime;
+    }
+
+    public String getDeparture() {
+        return departure;
+    }
+
+    public void setDeparture(String departure) {
+        this.departure = departure;
+    }
+
+    public String getDestination() {
+        return destination;
+    }
+
+    public void setDestination(String destination) {
+        this.destination = destination;
+    }
+
     public void setAirline(String airline) {
         this.airline = airline;
     }

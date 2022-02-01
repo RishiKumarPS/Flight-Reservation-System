@@ -54,6 +54,16 @@ public class passenger {
         this.contact = contact;
     }
 
+    public long getPhone() { return this.contact.getPhone(); }
+
+    public String getEmail() { return this.contact.getEmail(); }
+
+    public String getStreet() { return this.address.getStreet(); }
+
+    public String getCity() { return this.address.getCity(); }
+
+    public String getState() { return this.address.getState(); }
+
     private static class contact {
         //nested contact class
         //attributes
