@@ -3,10 +3,10 @@ import java.util.*;
 
 public class ticket {
     private int pnr;
+    private flight flight;
+    private passenger passenger;
     private int seatNo;
     private boolean ticketType;
-    private String departure;
-    private String destination;
     //need to think of some way to include date and time
     private int price;
 
@@ -34,22 +34,6 @@ public class ticket {
         this.ticketType = ticketType;
     }
 
-    public String getDeparture() {
-        return departure;
-    }
-
-    public void setDeparture(String departure) {
-        this.departure = departure;
-    }
-
-    public String getDestination() {
-        return destination;
-    }
-
-    public void setDestination(String destination) {
-        this.destination = destination;
-    }
-
     public int getPrice() {
         return price;
     }
@@ -58,12 +42,20 @@ public class ticket {
         this.price = price;
     }
 
-    public ticket(int pnr, int seatNo, boolean ticketType, String departure, String destination, int price) {
+    public com.flightReservationSystem.flight getFlight() {
+        return flight;
+    }
+
+    public void setFlight(com.flightReservationSystem.flight flight) {
+        this.flight = flight;
+    }
+
+    public ticket(int pnr, com.flightReservationSystem.flight flight, com.flightReservationSystem.passenger passenger, int seatNo, boolean ticketType, int price) {
         this.pnr = pnr;
+        this.flight = flight;
+        this.passenger = passenger;
         this.seatNo = seatNo;
         this.ticketType = ticketType;
-        this.departure = departure;
-        this.destination = destination;
         this.price = price;
     }
 }

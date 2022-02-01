@@ -5,6 +5,9 @@ public class flight {
     private int capacity;
     private String airline;
     private int seatsBooked;
+    private int journeyTime;
+    private String departure;
+    private String destination;
 
     public int getFlightNumber() {
         return flightNumber;
