@@ -1,6 +1,6 @@
 package com.flightReservationSystem;
 
-class regularTicket extends ticket{
+public class regularTicket extends ticket{
 
     private boolean food;
     private boolean water;

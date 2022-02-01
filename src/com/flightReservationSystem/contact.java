@@ -1,6 +1,6 @@
 package com.flightReservationSystem;
 
-class contact {
+public class contact {
     private double phone;
     private String email;
     private address address;

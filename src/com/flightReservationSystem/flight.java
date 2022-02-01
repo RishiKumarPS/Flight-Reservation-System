@@ -1,6 +1,6 @@
 package com.flightReservationSystem;
 
-class flight {
+public class flight {
     private int flightNumber;
     private int capacity;
     private String airline;

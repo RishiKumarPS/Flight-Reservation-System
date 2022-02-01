@@ -1,6 +1,6 @@
 package com.flightReservationSystem;
 
-class address {
+public class address {
     private String street;
     private String city;
     private String state;

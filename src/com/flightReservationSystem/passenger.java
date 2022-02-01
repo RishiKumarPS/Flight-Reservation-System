@@ -1,6 +1,6 @@
 package com.flightReservationSystem;
 
-class passenger {
+public class passenger {
     private int passengerId;
     private String name;
     private contact contact;
