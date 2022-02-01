@@ -2,6 +2,8 @@ package com.flightReservationSystem;
 import java.util.*;
 
 public abstract class ticket {
+    //abstract class is a restricted class that cannot be used to create objects
+    //attributes
     private static int pnrCounter = 1000;
     private int pnr;
     private flight flight;
@@ -12,6 +14,7 @@ public abstract class ticket {
     //need to think of some way to include date and time
     private int price;
 
+    //getter and setter methods
     public int getPnr() {
         return pnr;
     }
@@ -53,6 +56,7 @@ public abstract class ticket {
     }
 
     public ticket(boolean ticketType, flight flight, passenger passenger, int price) {
+        //ticket constructor
         this.pnr = pnrCounter;
         this.flight = flight;
         this.passenger = passenger;

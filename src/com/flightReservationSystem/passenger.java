@@ -1,6 +1,8 @@
 package com.flightReservationSystem;
 
+//passenger class for creating passenger object
 public class passenger {
+    //attributes
     private static int idCounter = 1;
     private int passengerId;
     private String name;
@@ -8,12 +10,14 @@ public class passenger {
     private passenger.address address;
 
     public passenger(String name, long phone, String email, String street, String city, String state) {
+        //passenger constructor
         this.passengerId = idCounter++;
         this.name = name;
         this.contact = new passenger.contact(phone, email);
         this.address = new passenger.address(street, city, state);
     }
 
+    //getter and setter methods
     public int getPassengerCount(){
         return idCounter;
     }
@@ -51,14 +55,18 @@ public class passenger {
     }
 
     private static class contact {
+        //nested contact class
+        //attributes
         private long phone;
         private String email;
 
         public contact(long phone, String email) {
+            //contact constructor
             this.phone = phone;
             this.email = email;
         }
 
+        //getter and setter methods
         public long getPhone() {
             return phone;
         }
@@ -78,16 +86,20 @@ public class passenger {
 
 
     private static class address {
+        //nested address class
+        //attributes
         private String street;
         private String city;
         private String state;
 
         public address(String street, String city, String state) {
+            //address constructor
             this.street = street;
             this.city = city;
             this.state = state;
         }
 
+        //getter and setter methods
         public String getStreet() {
             return street;
         }

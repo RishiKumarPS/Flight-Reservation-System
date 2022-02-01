@@ -1,6 +1,8 @@
 package com.flightReservationSystem;
 
+//flight class for creating flight object.
 public class flight {
+    //attributes
     private int flightNumber;
     private int capacity;
     private String airline;
@@ -9,6 +11,7 @@ public class flight {
     private String departure;
     private String destination;
 
+    //getter and setter methods
     public int getFlightNumber() {
         return flightNumber;
     }
@@ -42,6 +45,7 @@ public class flight {
     }
 
     public flight(int flightNumber, int capacity, String airline, int seatsBooked, int journeyTime, String departure, String destination) {
+        //flight constructor
         this.flightNumber = flightNumber;
         this.capacity = capacity;
         this.airline = airline;
