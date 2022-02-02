@@ -8,7 +8,7 @@ public class main {
         System.out.println("Welcome to Flight Reservation System");
         System.out.println("------------------------------------");
         System.out.println(" ");
-        //create passenger objects
+        //creating users or passenger objects
         passenger p1 = createPassenger("Rishi", 12345679, "rishi@upgrad.com", "Downtown", "Bengaluru", "Karnataka");
         passenger p2 = createPassenger("Rahul", 987654321, "rahul@upgrad.com", "Raisina Hills", "New Delhi", "Delhi");
         //create flight objects
@@ -50,7 +50,7 @@ public class main {
     }
 
     public static regularTicket createTicket1(boolean ticketType, passenger passenger, flight flight, int price, boolean food, boolean water, boolean snacks){
-        //creates and returns a reguralTicket object
+        //creates and returns a regularTicket object
         return new regularTicket(ticketType, flight, passenger, price, food, water, snacks);
     }
 
