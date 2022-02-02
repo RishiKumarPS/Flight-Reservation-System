@@ -17,7 +17,7 @@ public class main {
         //book tickets
         regularTicket t1 = createTicket1(false, p1,f1, 5000, true, true, true);
         String[] locations = {"Nandi Hills", "Vidhana Soudha", "UB City", "Commercial Street", "Pyramid Valley"};
-        touristTicket t2 = createTicket2(true, p2,f2, 6500, "Vivata by Taj, Yeswanthpur, Bengaluru", locations);
+        touristTicket t2 = createTicket2(true, p2,f2, 6500, "Vivanta by Taj, Yeswanthpur, Bengaluru", locations);
         //print ticket
         System.out.println("Passenger Details: ");
         System.out.println("Passenger ID: "+p1.getPassengerId());
