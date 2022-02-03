@@ -18,9 +18,7 @@ public class passenger {
     }
 
     //getter and setter methods
-    public int getPassengerCount(){
-        return idCounter;
-    }
+    public int getPassengerCount(){ return idCounter; }
 
     public passenger.address getAddress() {
         return address;

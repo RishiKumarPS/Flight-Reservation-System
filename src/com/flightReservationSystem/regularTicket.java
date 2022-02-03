@@ -7,10 +7,10 @@ public class regularTicket extends ticket{
     private boolean water;
     private boolean snacks;
 
-    public regularTicket(boolean ticketType, flight flightObj, passenger passengerObj, int price, boolean food, boolean water, boolean snacks) {
+    public regularTicket(boolean ticketType, flight flightObj, passenger passengerObj, int price, boolean food, boolean water, boolean snacks, int seatNo) {
         //regularTicket constructor
         //super is a reference variable which is used to refer immediate parent class object
-        super(ticketType, flightObj, passengerObj, price);
+        super(ticketType, flightObj, passengerObj, price, seatNo);
         this.food = food;
         this.water = water;
         this.snacks = snacks;
@@ -21,6 +21,8 @@ public class regularTicket extends ticket{
     public int getPnr() {
         return super.getPnr();
     }
+
+    public int getSeatNo() { return super.getSeatNo(); }
 
     public boolean isFood() {
         return food;

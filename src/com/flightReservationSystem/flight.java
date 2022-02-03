@@ -10,8 +10,44 @@ public class flight {
     private int journeyTime;
     private String departure;
     private String destination;
+    private String arrivalDate;
+    private String arrivalTime;
+    private String departureDate;
+    private String departureTime;
 
     //getter and setter methods
+    public String getArrivalDate() {
+        return arrivalDate;
+    }
+
+    public void setArrivalDate(String arrivalDate) {
+        this.arrivalDate = arrivalDate;
+    }
+
+    public String getArrivalTime() {
+        return arrivalTime;
+    }
+
+    public void setArrivalTime(String arrivalTime) {
+        this.arrivalTime = arrivalTime;
+    }
+
+    public String getDepartureDate() {
+        return departureDate;
+    }
+
+    public void setDepartureDate(String departureDate) {
+        this.departureDate = departureDate;
+    }
+
+    public String getDepartureTime() {
+        return departureTime;
+    }
+
+    public void setDepartureTime(String departureTime) {
+        this.departureTime = departureTime;
+    }
+
     public int getFlightNumber() {
         return flightNumber;
     }
@@ -68,8 +104,7 @@ public class flight {
         this.seatsBooked = seatsBooked;
     }
 
-    public flight(int flightNumber, int capacity, String airline, int seatsBooked, int journeyTime, String departure, String destination) {
-        //flight constructor
+    public flight(int flightNumber, int capacity, String airline, int seatsBooked, int journeyTime, String departure, String destination, String arrivalDate, String arrivalTime, String departureDate, String departureTime) {
         this.flightNumber = flightNumber;
         this.capacity = capacity;
         this.airline = airline;
@@ -77,5 +112,9 @@ public class flight {
         this.journeyTime = journeyTime;
         this.departure = departure;
         this.destination = destination;
+        this.arrivalDate = arrivalDate;
+        this.arrivalTime = arrivalTime;
+        this.departureDate = departureDate;
+        this.departureTime = departureTime;
     }
 }

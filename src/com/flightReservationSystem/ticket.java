@@ -11,8 +11,9 @@ public abstract class ticket {
     private static int seatCounter = 1;
     private int seatNo;
     private boolean ticketType;
-    //need to think of some way to include date and time
     private int price;
+
+
 
     //getter and setter methods
     public int getPnr() {
@@ -55,7 +56,7 @@ public abstract class ticket {
         this.flight = flight;
     }
 
-    public ticket(boolean ticketType, flight flight, passenger passenger, int price) {
+    public ticket(boolean ticketType, flight flight, passenger passenger, int price, int seatNo) {
         //ticket constructor
         this.pnr = pnrCounter;
         this.flight = flight;
@@ -63,6 +64,7 @@ public abstract class ticket {
         this.seatNo = seatCounter;
         this.ticketType = ticketType;
         this.price = price;
+        this.seatNo = seatNo;
         pnrCounter++;
         seatCounter++;
     }
